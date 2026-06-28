@@ -1,16 +1,19 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meu Diário</title>
+    <meta name="theme-color" content="#007bff" />
+    <title>Diário de Bordo</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="manifest" href="manifest.json" />
-    <script src="./service-worker.js"></script>
   </head>
   <body>
     <header>
-      <h1>Meu Diário</h1>
+      <h1>Diário de Bordo</h1>
+      <button id="btn-install" class="btn-install" hidden>
+        Instalar app
+      </button>
     </header>
 
     <main>
@@ -21,7 +24,7 @@
 
         <input type="text" id="descricao" placeholder="Descrição" />
 
-        <input type="date" id="data" placeholder="Data" />
+        <input type="date" id="data" />
 
         <button onclick="addNotes()">Salvar</button>
       </section>
